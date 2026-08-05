@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>ООО «Арматурный цех» — производство и поставка арматуры</title>
+
+  <meta
+    name="description"
+    content="Производство, резка, гибка и поставка арматуры для строительных объектов. Расчёт заявки и доставка."
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header" id="top">
+
+    <div class="container header__inner">
+
+      <a
+        class="logo"
+        href="#top"
+        aria-label="Арматурный цех — на главную"
+      >
+
+        <span class="logo__mark">АЦ</span>
+
+        <span class="logo__text">
+
+          <strong>Арматурный цех</strong>
+
+          <small>
+            Производство и поставка металлопроката
+          </small>
+
+        </span>
+
+      </a>
+
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        aria-controls="main-menu"
+      >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+
+      <nav
+        class="nav"
+        id="main-menu"
+        aria-label="Основное меню"
+      >
+
+        <a href="#products">
+          Продукция
+        </a>
+
+        <a href="#services">
+          Услуги
+        </a>
+
+        <a href="#about">
+          О компании
+        </a>
+
+        <a href="#delivery">
+          Доставка
+        </a>
+
+        <a href="#contacts">
+          Контакты
+        </a>
+
+      </nav>
+
+
+      <div class="header__contacts">
+
+        <a
+          class="header__phone"
+          href="tel:+78120000000"
+        >
+          +7 (812) 000-00-00
+        </a>
+
+        <button
+          class="text-button"
+          type="button"
+          data-open-modal
+        >
+          Заказать звонок
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <section class="hero">
+
+      <div class="hero__grid"></div>
+
+
+      <div class="container hero__content">
+
+        <div class="hero__copy">
+
+          <p class="eyebrow">
+            Арматура для строительства
+          </p>
+
+          <h1>
+            Производим и поставляем арматуру точно в срок
+          </h1>
+
+          <p class="hero__lead">
+            Резка, гибка, вязка каркасов и комплектация строительных объектов.
+            Работаем с организациями и частными заказчиками.
+          </p>
+
+
+          <div class="hero__actions">
+
+            <a
+              class="button button--primary"
+              href="#request"
+            >
+              Получить расчёт
+            </a>
+
+            <a
+              class="button button--outline"
+              href="#products"
+            >
+              Смотреть продукцию
+            </a>
+
+          </div>
+
+
+          <ul
+            class="hero__features"
+            aria-label="Преимущества"
+          >
+
+            <li>
+
+              <strong>
+                от 1 дня
+              </strong>
+
+              <span>
+                срок изготовления
+              </span>
+
+            </li>
+
+            <li>
+
+              <strong>
+                от 1 тонны
+              </strong>
+
+              <span>
+                минимальный заказ
+              </span>
+
+            </li>
+
+            <li>
+
+              <strong>
+                по ГОСТ
+              </strong>
+
+              <span>
+                сертификаты качества
+              </span>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <aside class="hero-card">
+
+          <p class="hero-card__label">
+            Быстрый расчёт
+          </p>
+
+          <h2>
+            Отправьте заявку
+          </h2>
+
+          <p>
+            Менеджер уточнит объём, марку стали, обработку и адрес доставки.
+          </p>
+
+
+          <form class="quick-form js-form">
+
+            <label>
+
+              <span>
+                Ваше имя
+              </span>
+
+              <input
+                type="text"
+                name="name"
+                placeholder="Алексей"
+                required
+              >
+
+            </label>
+
+
+            <label>
+
+              <span>
+                Телефон
+              </span>
+
+              <input
+                type="tel"
+                name="phone"
+                placeholder="+7 (___) ___-__-__"
+                required
+              >
+
+            </label>
+
+
+            <label>
+
+              <span>
+                Что необходимо?
+              </span>
+
+              <select name="product">
+
+                <option value="Арматура в прутках">
+                  Арматура в прутках
+                </option>
+
+                <option value="Резка и гибка">
+                  Резка и гибка
+                </option>
+
+                <option value="Арматурные каркасы">
+                  Арматурные каркасы
+                </option>
+
+                <option value="Арматурная сетка">
+                  Арматурная сетка
+                </option>
+
+                <option value="Другое">
+                  Другое
+                </option>
+
+              </select>
+
+            </label>
+
+
+            <button
+              class="button button--primary button--wide"
+              type="submit"
+            >
+              Отправить заявку
+            </button>
+
+
+            <small>
+              Нажимая кнопку, вы соглашаетесь с политикой обработки
+              персональных данных.
+            </small>
+
+          </form>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+
+    <section
+      class="section"
+      id="products"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+
+            <p class="eyebrow">
+              Каталог
+            </p>
+
+            <h2>
+              Наша продукция
+            </h2>
+
+          </div>
+
+
+          <p>
+            Комплектуем объекты арматурой и готовыми изделиями
+            по спецификации заказчика.
+          </p>
+
+        </div>
+
+
+        <div class="product-grid">
+
+          <article class="product-card">
+
+            <div class="product-card__visual product-card__visual--bars">
+
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+
+            </div>
+
+
+            <div class="product-card__content">
+
+              <h3>
+                Арматура в прутках
+              </h3>
+
+              <p>
+                Гладкая и рифлёная арматура различных диаметров
+                и классов прочности.
+              </p>
+
+              <button
+                class="card-link"
+                type="button"
+                data-product="Арматура в прутках"
+              >
+                Запросить цену →
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <article class="product-card">
+
+            <div class="product-card__visual product-card__visual--bent">
+
+              <span></span>
+              <span></span>
+              <span></span>
+
+            </div>
+
+
+            <div class="product-card__content">
+
+              <h3>
+                Гнутая арматура
+              </h3>
+
+              <p>
+                Скобы, хомуты, П- и Г-образные элементы
+                по вашим чертежам.
+              </p>
+
+              <button
+                class="card-link"
+                type="button"
+                data-product="Гнутая арматура"
+              >
+                Запросить цену →
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <article class="product-card">
+
+            <div class="product-card__visual product-card__visual--mesh">
+
+              <span></span>
+
+            </div>
+
+
+            <div class="product-card__content">
+
+              <h3>
+                Арматурная сетка
+              </h3>
+
+              <p>
+                Сварная сетка стандартных и индивидуальных размеров
+                для бетонирования.
+              </p>
+
+              <button
+                class="card-link"
+                type="button"
+                data-product="Арматурная сетка"
+              >
+                Запросить цену →
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <article class="product-card">
+
+            <div class="product-card__visual product-card__visual--frame">
+
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+
+            </div>
+
+
+            <div class="product-card__content">
+
+              <h3>
+                Каркасы и закладные
+              </h3>
+
+              <p>
+                Пространственные каркасы, плоские каркасы
+                и закладные детали.
+              </p>
+
+              <button
+                class="card-link"
+                type="button"
+                data-product="Арматурные каркасы"
+              >
+                Запросить цену →
+              </button>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section
+      class="section section--dark"
+      id="services"
+    >
+
+      <div class="container">
+
+        <div class="section-heading section-heading--light">
+
+          <div>
+
+            <p class="eyebrow">
+              Производство
+            </p>
+
+            <h2>
+              Услуги арматурного цеха
+            </h2>
+
+          </div>
+
+
+          <p>
+            Берём на себя подготовку арматуры, чтобы сократить
+            объём работ на строительной площадке.
+          </p>
+
+        </div>
+
+
+        <div class="service-list">
+
+          <article class="service">
+
+            <span class="service__number">
+              01
+            </span>
+
+            <div>
+
+              <h3>
+                Резка в размер
+              </h3>
+
+              <p>
+                Подготовка прутков по ведомости
+                и маркировка каждой позиции.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="service">
+
+            <span class="service__number">
+              02
+            </span>
+
+            <div>
+
+              <h3>
+                Гибка арматуры
+              </h3>
+
+              <p>
+                Изготовление элементов на оборудовании
+                с соблюдением заданной геометрии.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="service">
+
+            <span class="service__number">
+              03
+            </span>
+
+            <div>
+
+              <h3>
+                Сварка каркасов
+              </h3>
+
+              <p>
+                Сборка плоских и пространственных конструкций
+                по чертежам.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="service">
+
+            <span class="service__number">
+              04
+            </span>
+
+            <div>
+
+              <h3>
+                Комплектация объекта
+              </h3>
+
+              <p>
+                Поэтапная поставка партий в соответствии
+                с графиком строительства.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section
+      class="section"
+      id="about"
+    >
+
+      <div class="container about">
+
+        <div
+          class="about__visual"
+          aria-hidden="true"
+        >
+
+          <div class="factory">
+
+            <div class="factory__beam"></div>
+
+            <div class="factory__hook"></div>
+
+            <div class="factory__floor"></div>
+
+            <div class="factory__bundle factory__bundle--one"></div>
+
+            <div class="factory__bundle factory__bundle--two"></div>
+
+          </div>
+
+        </div>
+
+
+        <div class="about__content">
+
+          <p class="eyebrow">
+            О компании
+          </p>
+
+          <h2>
+            Надёжный производственный партнёр
+          </h2>
+
+          <p>
+            ООО «Арматурный цех» занимается поставкой и обработкой
+            арматурного проката для жилищного, коммерческого
+            и промышленного строительства.
+          </p>
+
+          <p>
+            Мы рассчитываем потребность по спецификации, готовим изделия,
+            комплектуем заказ и организуем доставку на объект.
+          </p>
+
+
+          <div class="stats">
+
+            <div>
+
+              <strong>
+                10+
+              </strong>
+
+              <span>
+                лет опыта
+              </span>
+
+            </div>
+
+            <div>
+
+              <strong>
+                500+
+              </strong>
+
+              <span>
+                выполненных заказов
+              </span>
+
+            </div>
+
+            <div>
+
+              <strong>
+                24 ч
+              </strong>
+
+              <span>
+                на подготовку расчёта
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <a
+            class="button button--dark"
+            href="#request"
+          >
+            Обсудить заказ
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section
+      class="section section--muted"
+      id="delivery"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+
+            <p class="eyebrow">
+              Как мы работаем
+            </p>
+
+            <h2>
+              От заявки до доставки
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <ol class="steps">
+
+          <li>
+
+            <span>
+              1
+            </span>
+
+            <h3>
+              Получаем заявку
+            </h3>
+
+            <p>
+              Вы присылаете спецификацию, чертёж
+              или перечень необходимых позиций.
+            </p>
+
+          </li>
+
+
+          <li>
+
+            <span>
+              2
+            </span>
+
+            <h3>
+              Готовим расчёт
+            </h3>
+
+            <p>
+              Уточняем наличие, сроки производства,
+              стоимость обработки и доставки.
+            </p>
+
+          </li>
+
+
+          <li>
+
+            <span>
+              3
+            </span>
+
+            <h3>
+              Производим
+            </h3>
+
+            <p>
+              Режем, гнём и собираем изделия,
+              проводим контроль размеров.
+            </p>
+
+          </li>
+
+
+          <li>
+
+            <span>
+              4
+            </span>
+
+            <h3>
+              Доставляем
+            </h3>
+
+            <p>
+              Комплектуем партию и привозим заказ
+              на строительный объект.
+            </p>
+
+          </li>
+
+        </ol>
+
+      </div>
+
+    </section>
+
+
+    <section
+      class="section request"
+      id="request"
+    >
+
+      <div class="container request__inner">
+
+        <div class="request__copy">
+
+          <p class="eyebrow">
+            Коммерческое предложение
+          </p>
+
+          <h2>
+            Рассчитаем стоимость вашего заказа
+          </h2>
+
+          <p>
+            Прикрепите спецификацию или опишите задачу.
+            Мы свяжемся с вами, уточним детали
+            и подготовим предложение.
+          </p>
+
+
+          <div class="request__contacts">
+
+            <a href="tel:+78120000000">
+              +7 (812) 000-00-00
+            </a>
+
+            <a href="mailto:info@arm-ceh.ru">
+              info@arm-ceh.ru
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <form class="request-form js-form">
+
+          <div class="form-row">
+
+            <label>
+
+              <span>
+                Имя
+              </span>
+
+              <input
+                type="text"
+                name="name"
+                placeholder="Ваше имя"
+                required
+              >
+
+            </label>
+
+
+            <label>
+
+              <span>
+                Телефон
+              </span>
+
+              <input
+                type="tel"
+                name="phone"
+                placeholder="+7 (___) ___-__-__"
+                required
+              >
+
+            </label>
+
+          </div>
+
+
+          <label>
+
+            <span>
+              Комментарий
+            </span>
+
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Например: арматура А500С, 12 мм, 10 тонн, нужна резка в размер"
+            ></textarea>
+
+          </label>
+
+
+          <label class="file-field">
+
+            <span>
+              Спецификация или чертёж
+            </span>
+
+            <input
+              type="file"
+              name="file"
+              accept=".pdf,.xls,.xlsx,.doc,.docx,.jpg,.jpeg,.png"
+            >
+
+          </label>
+
+
+          <button
+            class="button button--primary"
+            type="submit"
+          >
+            Отправить заявку
+          </button>
+
+
+          <p
+            class="form-status"
+            aria-live="polite"
+          ></p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer
+    class="footer"
+    id="contacts"
+  >
+
+    <div class="container footer__grid">
+
+      <div>
+
+        <a
+          class="logo logo--footer"
+          href="#top"
+        >
+
+          <span class="logo__mark">
+            АЦ
+          </span>
+
+          <span class="logo__text">
+
+            <strong>
+              Арматурный цех
+            </strong>
+
+            <small>
+              ООО «Арматурный цех»
+            </small>
+
+          </span>
+
+        </a>
+
+
+        <p class="footer__note">
+          Производство, обработка и поставка арматуры
+          для строительных объектов.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Навигация
+        </h3>
+
+        <a href="#products">
+          Продукция
+        </a>
+
+        <a href="#services">
+          Услуги
+        </a>
+
+        <a href="#about">
+          О компании
+        </a>
+
+        <a href="#delivery">
+          Доставка
+        </a>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Контакты
+        </h3>
+
+        <a href="tel:+78120000000">
+          +7 (812) 000-00-00
+        </a>
+
+        <a href="mailto:info@arm-ceh.ru">
+          info@arm-ceh.ru
+        </a>
+
+        <p>
+          г. Санкт-Петербург, адрес необходимо заменить
+        </p>
+
+        <p>
+          Пн–Пт: 09:00–18:00
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="container footer__bottom">
+
+      <span>
+        © <span id="current-year"></span>
+        ООО «Арматурный цех»
+      </span>
+
+      <a href="#">
+        Политика конфиденциальности
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <div
+    class="modal"
+    id="callback-modal"
+    aria-hidden="true"
+  >
+
+    <div
+      class="modal__backdrop"
+      data-close-modal
+    ></div>
+
+
+    <div
+      class="modal__dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+
+      <button
+        class="modal__close"
+        type="button"
+        aria-label="Закрыть"
+        data-close-modal
+      >
+        ×
+      </button>
+
+
+      <p class="eyebrow">
+        Обратный звонок
+      </p>
+
+      <h2 id="modal-title">
+        Свяжемся с вами
+      </h2>
+
+      <p>
+        Оставьте номер телефона —
+        менеджер перезвонит в рабочее время.
+      </p>
+
+
+      <form class="modal-form js-form">
+
+        <label>
+
+          <span>
+            Ваше имя
+          </span>
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Ваше имя"
+            required
+          >
+
+        </label>
+
+
+        <label>
+
+          <span>
+            Телефон
+          </span>
+
+          <input
+            type="tel"
+            name="phone"
+            placeholder="+7 (___) ___-__-__"
+            required
+          >
+
+        </label>
+
+
+        <input
+          type="hidden"
+          name="product"
+          value="Обратный звонок"
+        >
+
+
+        <button
+          class="button button--primary button--wide"
+          type="submit"
+        >
+          Заказать звонок
+        </button>
+
+
+        <p
+          class="form-status"
+          aria-live="polite"
+        ></p>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
