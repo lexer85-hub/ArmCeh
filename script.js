@@ -33,3 +33,15 @@ const yearElement = document.querySelector("#current-year");
 if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
 }
+
+// Карта загружается только по запросу посетителя.
+const loadMapButton = document.querySelector("#load-warehouse-map");
+loadMapButton?.addEventListener("click", () => {
+  const map = document.createElement("iframe");
+  map.src = "https://yandex.ru/map-widget/v1/?ll=30.359724%2C59.989823&z=16&pt=30.359724%2C59.989823%2Cpm2rdm";
+  map.title = "Склад Арматурный цех — 59.989823, 30.359724";
+  map.referrerPolicy = "no-referrer";
+  map.allowFullscreen = true;
+  document.querySelector("#warehouse-map")?.replaceChildren(map);
+  map.focus();
+});

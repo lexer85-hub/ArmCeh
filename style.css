@@ -853,7 +853,7 @@ button:disabled {
   font-size: 14px;
 }
 
-/* Форма заявки */
+/* Связаться с нами */
 
 .request {
   color: var(--white);
@@ -894,6 +894,43 @@ button:disabled {
   color: var(--text);
   background: var(--white);
   border-radius: var(--radius);
+}
+
+/* Карта склада */
+
+.warehouse__map {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.warehouse__placeholder {
+  display: flex;
+  min-height: 420px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  text-align: center;
+  background: radial-gradient(circle at center, rgba(242, 169, 0, 0.12), transparent 70%);
+}
+
+.warehouse__pin {
+  color: var(--accent-dark);
+  font-size: 52px;
+}
+
+.warehouse__placeholder small {
+  margin-top: 14px;
+  color: var(--muted);
+}
+
+.warehouse__map iframe {
+  display: block;
+  width: 100%;
+  height: 420px;
+  border: 0;
 }
 
 /* Подвал */
