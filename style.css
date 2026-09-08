@@ -984,6 +984,101 @@ button:disabled {
   border: 0;
 }
 
+/* Реквизиты организации */
+
+.section.requisites {
+  padding: 48px 0 56px;
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+}
+
+.requisites__heading {
+  margin-bottom: 24px;
+}
+
+.requisites__heading h2 {
+  margin-bottom: 14px;
+}
+
+.requisites__notice {
+  max-width: 800px;
+  margin: 0;
+  padding-left: 14px;
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.requisites__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.requisites__card {
+  min-width: 0;
+  padding: 28px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.requisites__card h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.requisites__list {
+  margin: 0;
+}
+
+.requisites__list > div {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.requisites__list > div:first-child {
+  padding-top: 0;
+}
+
+.requisites__list > div:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.requisites__list dt {
+  color: var(--muted);
+}
+
+.requisites__list dd {
+  min-width: 0;
+  margin: 0;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+  .requisites__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .requisites__card {
+    padding: 22px;
+  }
+
+  .requisites__list > div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
 /* Подвал */
 
 .footer {
