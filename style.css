@@ -314,7 +314,8 @@ h3 {
   z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(310px, 0.55fr);
-  align-items: center;
+  align-items: stretch;
+  align-content: center;
   gap: 70px;
   min-height: 760px;
   padding-top: 72px;
@@ -407,6 +408,8 @@ h3 {
 }
 
 .hero-card {
+  display: flex;
+  flex-direction: column;
   padding: 34px;
   color: var(--text);
   background: var(--surface);
@@ -430,6 +433,10 @@ h3 {
 
 .hero-card > p {
   color: var(--muted);
+}
+
+.hero-card .max-contact-block {
+  margin-top: auto;
 }
 
 .max-contact-block {
