@@ -444,12 +444,6 @@ h3 {
   gap: 14px;
 }
 
-.max-contact-block small,
-.max-contact-note {
-  color: var(--muted);
-  font-size: 13px;
-}
-
 button:disabled {
   cursor: default;
 }
@@ -903,12 +897,18 @@ button:disabled {
 }
 
 .warehouse__top {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
   gap: 16px;
   margin-bottom: 16px;
+}
+
+.warehouse__top .button {
+  justify-self: end;
+  max-width: 100%;
+  padding: 12px 18px;
+  text-align: center;
 }
 
 .warehouse__top .eyebrow {
