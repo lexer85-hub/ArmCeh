@@ -809,14 +809,12 @@
           <a class="button button--primary" href="https://yandex.ru/maps/?rtext=~59.989823%2C30.359724&amp;rtt=auto" target="_blank" rel="noopener noreferrer">Построить маршрут</a>
         </div>
         <div class="warehouse__map" id="warehouse-map">
-          <div class="warehouse__placeholder">
-            <span class="warehouse__pin" aria-hidden="true">⌖</span>
-            <h3>Склад «Арматурный цех»</h3>
-            <p>59.989823, 30.359724</p>
-            <button class="button button--dark" type="button" id="load-warehouse-map">Показать карту</button>
-            <small>Яндекс Карты загрузятся после нажатия.</small>
-            <noscript><p><a href="https://yandex.ru/maps/?ll=30.359724%2C59.989823&amp;z=16&amp;pt=30.359724%2C59.989823%2Cpm2rdm" target="_blank" rel="noopener noreferrer">Открыть склад на Яндекс Картах</a></p></noscript>
-          </div>
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=30.359724%2C59.989823&amp;z=16&amp;pt=30.359724%2C59.989823%2Cpm2rdm"
+            title="Склад Арматурный цех — 59.989823, 30.359724"
+            referrerpolicy="no-referrer"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </section>

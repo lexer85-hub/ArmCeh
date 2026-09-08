@@ -905,27 +905,6 @@ button:disabled {
   background: var(--white);
 }
 
-.warehouse__placeholder {
-  display: flex;
-  min-height: 420px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 28px;
-  text-align: center;
-  background: radial-gradient(circle at center, rgba(242, 169, 0, 0.12), transparent 70%);
-}
-
-.warehouse__pin {
-  color: var(--accent-dark);
-  font-size: 52px;
-}
-
-.warehouse__placeholder small {
-  margin-top: 14px;
-  color: var(--muted);
-}
-
 .warehouse__map iframe {
   display: block;
   width: 100%;
