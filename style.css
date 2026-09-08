@@ -31,8 +31,7 @@ body {
   line-height: 1.55;
 }
 
-body.menu-open,
-body.modal-open {
+body.menu-open {
   overflow: hidden;
 }
 
@@ -433,60 +432,19 @@ h3 {
   color: var(--muted);
 }
 
-.quick-form,
-.modal-form,
-.request-form {
+.max-contact-block {
   display: grid;
-  gap: 17px;
+  gap: 14px;
 }
 
-label {
-  display: grid;
-  gap: 7px;
-}
-
-label > span {
-  color: #4f565d;
+.max-contact-block small,
+.max-contact-note {
+  color: var(--muted);
   font-size: 13px;
-  font-weight: 700;
 }
 
-input,
-select,
-textarea {
-  width: 100%;
-  color: var(--text);
-  background: var(--white);
-  border: 1px solid #d7dce0;
-  border-radius: 8px;
-  outline: none;
-  transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-input,
-select {
-  height: 48px;
-  padding: 0 14px;
-}
-
-textarea {
-  min-height: 120px;
-  padding: 13px 14px;
-  resize: vertical;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(242, 169, 0, 0.15);
-}
-
-.quick-form small {
-  color: #848b91;
-  font-size: 11px;
+button:disabled {
+  cursor: default;
 }
 
 /* Продукция */
@@ -924,36 +882,11 @@ textarea:focus {
   font-weight: 800;
 }
 
-.request-form {
+.contact-card {
   padding: 34px;
   color: var(--text);
   background: var(--white);
   border-radius: var(--radius);
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-}
-
-.file-field input {
-  height: auto;
-  padding: 13px;
-}
-
-.form-status {
-  display: none;
-  margin: 0;
-  padding: 12px 14px;
-  color: #176b35;
-  background: #e7f6ed;
-  border-radius: 8px;
-  font-size: 13px;
-}
-
-.form-status.is-visible {
-  display: block;
 }
 
 /* Подвал */
@@ -1012,55 +945,6 @@ textarea:focus {
   color: #6f7880;
   border-top: 1px solid #252a2f;
   font-size: 12px;
-}
-
-/* Модальное окно */
-
-.modal {
-  position: fixed;
-  z-index: 300;
-  inset: 0;
-  display: none;
-  place-items: center;
-  padding: 20px;
-}
-
-.modal.is-open {
-  display: grid;
-}
-
-.modal__backdrop {
-  position: absolute;
-  inset: 0;
-  background: rgba(4, 6, 8, 0.78);
-  backdrop-filter: blur(5px);
-}
-
-.modal__dialog {
-  position: relative;
-  z-index: 1;
-  width: min(100%, 480px);
-  padding: 38px;
-  background: var(--white);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-
-.modal__dialog > p:not(.eyebrow) {
-  color: var(--muted);
-}
-
-.modal__close {
-  position: absolute;
-  top: 12px;
-  right: 15px;
-  width: 38px;
-  height: 38px;
-  color: #4c5359;
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  font-size: 29px;
 }
 
 /* Адаптивность */
@@ -1220,7 +1104,6 @@ textarea:focus {
   .product-grid,
   .service-list,
   .steps,
-  .form-row,
   .stats,
   .footer__grid {
     grid-template-columns: 1fr;
@@ -1253,8 +1136,7 @@ textarea:focus {
     margin-bottom: 30px;
   }
 
-  .request-form,
-  .modal__dialog {
+  .contact-card {
     padding: 25px;
   }
 

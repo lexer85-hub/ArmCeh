@@ -103,9 +103,9 @@
         <button
           class="text-button"
           type="button"
-          data-open-modal
+          disabled aria-describedby="max-contact-note"
         >
-          Заказать звонок
+          Написать нам в MAX
         </button>
 
       </div>
@@ -212,7 +212,7 @@
           </p>
 
           <h2>
-            Отправьте заявку
+            Обсудим заказ в MAX
           </h2>
 
           <p>
@@ -220,87 +220,10 @@
           </p>
 
 
-          <form class="quick-form js-form">
-
-            <label>
-
-              <span>
-                Ваше имя
-              </span>
-
-              <input
-                type="text"
-                name="name"
-                placeholder="Алексей"
-                required
-              >
-
-            </label>
-
-
-            <label>
-
-              <span>
-                Телефон
-              </span>
-
-              <input
-                type="tel"
-                name="phone"
-                placeholder="+7 (___) ___-__-__"
-                required
-              >
-
-            </label>
-
-
-            <label>
-
-              <span>
-                Что необходимо?
-              </span>
-
-              <select name="product">
-
-                <option value="Арматура в прутках">
-                  Арматура в прутках
-                </option>
-
-                <option value="Резка и гибка">
-                  Резка и гибка
-                </option>
-
-                <option value="Арматурные каркасы">
-                  Арматурные каркасы
-                </option>
-
-                <option value="Арматурная сетка">
-                  Арматурная сетка
-                </option>
-
-                <option value="Другое">
-                  Другое
-                </option>
-
-              </select>
-
-            </label>
-
-
-            <button
-              class="button button--primary button--wide"
-              type="submit"
-            >
-              Отправить заявку
-            </button>
-
-
-            <small>
-              Нажимая кнопку, вы соглашаетесь с политикой обработки
-              персональных данных.
-            </small>
-
-          </form>
+          <div class="max-contact-block">
+            <button class="button button--primary button--wide max-contact" type="button" disabled aria-describedby="max-contact-note">Написать нам в MAX</button>
+            <small>Контакт в MAX скоро появится.</small>
+          </div>
 
         </aside>
 
@@ -368,9 +291,9 @@
               <button
                 class="card-link"
                 type="button"
-                data-product="Арматура в прутках"
+                disabled aria-describedby="max-contact-note"
               >
-                Запросить цену →
+                Написать нам в MAX
               </button>
 
             </div>
@@ -403,9 +326,9 @@
               <button
                 class="card-link"
                 type="button"
-                data-product="Гнутая арматура"
+                disabled aria-describedby="max-contact-note"
               >
-                Запросить цену →
+                Написать нам в MAX
               </button>
 
             </div>
@@ -436,9 +359,9 @@
               <button
                 class="card-link"
                 type="button"
-                data-product="Арматурная сетка"
+                disabled aria-describedby="max-contact-note"
               >
-                Запросить цену →
+                Написать нам в MAX
               </button>
 
             </div>
@@ -472,9 +395,9 @@
               <button
                 class="card-link"
                 type="button"
-                data-product="Арматурные каркасы"
+                disabled aria-describedby="max-contact-note"
               >
-                Запросить цену →
+                Написать нам в MAX
               </button>
 
             </div>
@@ -842,9 +765,8 @@
           </h2>
 
           <p>
-            Прикрепите спецификацию или опишите задачу.
-            Мы свяжемся с вами, уточним детали
-            и подготовим предложение.
+            Напишите нам по электронной почте или позвоните.
+            Обсудим детали заказа и подготовим предложение.
           </p>
 
 
@@ -863,88 +785,12 @@
         </div>
 
 
-        <form class="request-form js-form">
-
-          <div class="form-row">
-
-            <label>
-
-              <span>
-                Имя
-              </span>
-
-              <input
-                type="text"
-                name="name"
-                placeholder="Ваше имя"
-                required
-              >
-
-            </label>
-
-
-            <label>
-
-              <span>
-                Телефон
-              </span>
-
-              <input
-                type="tel"
-                name="phone"
-                placeholder="+7 (___) ___-__-__"
-                required
-              >
-
-            </label>
-
-          </div>
-
-
-          <label>
-
-            <span>
-              Комментарий
-            </span>
-
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="Например: арматура А500С, 12 мм, 10 тонн, нужна резка в размер"
-            ></textarea>
-
-          </label>
-
-
-          <label class="file-field">
-
-            <span>
-              Спецификация или чертёж
-            </span>
-
-            <input
-              type="file"
-              name="file"
-              accept=".pdf,.xls,.xlsx,.doc,.docx,.jpg,.jpeg,.png"
-            >
-
-          </label>
-
-
-          <button
-            class="button button--primary"
-            type="submit"
-          >
-            Отправить заявку
-          </button>
-
-
-          <p
-            class="form-status"
-            aria-live="polite"
-          ></p>
-
-        </form>
+        <div class="contact-card">
+          <h3>Обсудим ваш заказ</h3>
+          <p>Подготовьте список позиций, объём и пожелания по доставке — это поможет быстрее рассчитать стоимость.</p>
+          <button class="button button--primary button--wide max-contact" type="button" disabled aria-describedby="max-contact-note">Написать нам в MAX</button>
+          <p class="max-contact-note" id="max-contact-note">Контакт в MAX скоро появится. Пока свяжитесь с нами по телефону или электронной почте.</p>
+        </div>
 
       </div>
 
@@ -1062,108 +908,6 @@
   </footer>
 
 
-  <div
-    class="modal"
-    id="callback-modal"
-    aria-hidden="true"
-  >
-
-    <div
-      class="modal__backdrop"
-      data-close-modal
-    ></div>
-
-
-    <div
-      class="modal__dialog"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="modal-title"
-    >
-
-      <button
-        class="modal__close"
-        type="button"
-        aria-label="Закрыть"
-        data-close-modal
-      >
-        ×
-      </button>
-
-
-      <p class="eyebrow">
-        Обратный звонок
-      </p>
-
-      <h2 id="modal-title">
-        Свяжемся с вами
-      </h2>
-
-      <p>
-        Оставьте номер телефона —
-        менеджер перезвонит в рабочее время.
-      </p>
-
-
-      <form class="modal-form js-form">
-
-        <label>
-
-          <span>
-            Ваше имя
-          </span>
-
-          <input
-            type="text"
-            name="name"
-            placeholder="Ваше имя"
-            required
-          >
-
-        </label>
-
-
-        <label>
-
-          <span>
-            Телефон
-          </span>
-
-          <input
-            type="tel"
-            name="phone"
-            placeholder="+7 (___) ___-__-__"
-            required
-          >
-
-        </label>
-
-
-        <input
-          type="hidden"
-          name="product"
-          value="Обратный звонок"
-        >
-
-
-        <button
-          class="button button--primary button--wide"
-          type="submit"
-        >
-          Заказать звонок
-        </button>
-
-
-        <p
-          class="form-status"
-          aria-live="polite"
-        ></p>
-
-      </form>
-
-    </div>
-
-  </div>
 
 </body>
 </html>
