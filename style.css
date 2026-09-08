@@ -898,6 +898,23 @@ button:disabled {
 
 /* Карта склада */
 
+.warehouse__heading {
+  margin-bottom: 44px;
+}
+
+.warehouse__top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.warehouse__top .eyebrow {
+  margin: 0;
+}
+
 .warehouse__map {
   overflow: hidden;
   border: 1px solid var(--line);
