@@ -459,8 +459,14 @@ h3 {
   color: var(--muted);
 }
 
+.hero-card .hero-card__hint {
+  margin: 0;
+  font-size: 14px;
+}
+
 .hero-card .max-contact-block {
-  margin-top: auto;
+  margin-top: 24px;
+  margin-bottom: auto;
 }
 
 .max-contact-block {
