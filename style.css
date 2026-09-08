@@ -229,12 +229,36 @@ h3 {
 }
 
 .text-button {
-  padding: 0;
+  padding: 4px 8px;
+  margin-right: -8px;
+  border-radius: 5px;
+  transition: color 0.15s ease, background-color 0.15s ease, transform 0.15s ease;
   color: var(--accent);
   background: none;
   border: 0;
   cursor: pointer;
   font-size: 12px;
+}
+
+.text-button:hover {
+  color: #ffca4a;
+  background-color: rgba(242, 169, 0, 0.12);
+}
+
+.text-button:active {
+  transform: translateY(1px) scale(0.97);
+  background-color: rgba(242, 169, 0, 0.24);
+}
+
+.text-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-button {
+    transition: none;
+  }
 }
 
 .menu-button {
