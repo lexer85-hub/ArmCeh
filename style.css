@@ -666,8 +666,7 @@ button:disabled {
   display: grid;
   grid-template-columns: 60px 1fr;
   gap: 20px;
-  min-height: 210px;
-  padding: 34px;
+  padding: 26px 34px;
   border-right: 1px solid #343b42;
   border-bottom: 1px solid #343b42;
 }
