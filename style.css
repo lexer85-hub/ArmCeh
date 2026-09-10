@@ -689,7 +689,7 @@ button:disabled {
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  align-items: stretch;
   gap: 80px;
 }
 
@@ -831,12 +831,37 @@ button:disabled {
 }
 
 .stats strong {
-  font-size: 29px;
+  font-size: clamp(24px, 2.2vw, 29px);
+  white-space: nowrap;
 }
 
 .stats span {
   color: var(--muted);
   font-size: 12px;
+}
+
+.about__facts {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 28px;
+}
+
+.about__facts h3 {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.about__facts ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.about__facts li + li {
+  margin-top: 7px;
 }
 
 /* Этапы */
@@ -1319,6 +1344,7 @@ button:disabled {
   .service-list,
   .steps,
   .stats,
+  .about__facts,
   .footer__grid {
     grid-template-columns: 1fr;
   }
