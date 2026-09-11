@@ -6,8 +6,8 @@
   --text: #17191c;
   --muted: #687078;
   --line: #dfe3e7;
-  --accent: #f2a900;
-  --accent-dark: #c98900;
+  --accent: #49b9ed;
+  --accent-dark: #087eaf;
   --white: #ffffff;
   --max-width: 1200px;
   --radius: 18px;
@@ -76,7 +76,7 @@ img {
   background:
     radial-gradient(
       circle at 82% 20%,
-      rgba(242, 169, 0, 0.12),
+      rgba(73, 185, 237, 0.12),
       transparent 28%
     ),
     var(--surface-dark);
@@ -241,13 +241,13 @@ h3 {
 }
 
 .text-button:hover {
-  color: #ffca4a;
-  background-color: rgba(242, 169, 0, 0.12);
+  color: #8bd8fa;
+  background-color: rgba(73, 185, 237, 0.12);
 }
 
 .text-button:active {
   transform: translateY(1px) scale(0.97);
-  background-color: rgba(242, 169, 0, 0.24);
+  background-color: rgba(73, 185, 237, 0.24);
 }
 
 .text-button:focus-visible {
@@ -312,7 +312,7 @@ h3 {
   width: 620px;
   height: 620px;
   content: "";
-  border: 90px solid rgba(242, 169, 0, 0.13);
+  border: 90px solid rgba(73, 185, 237, 0.13);
   border-radius: 50%;
 }
 
@@ -385,7 +385,7 @@ h3 {
 }
 
 .button--primary:hover {
-  background: #ffba19;
+  background: #75cef5;
 }
 
 .button--outline {
@@ -515,7 +515,7 @@ button:disabled {
   background: linear-gradient(
     150deg,
     transparent 40%,
-    rgba(242, 169, 0, 0.18)
+    rgba(73, 185, 237, 0.18)
   );
 }
 
@@ -853,7 +853,7 @@ button:disabled {
 .partner h3 { font-size: 22px; margin-bottom: 12px; }
 .partner p { color: var(--muted); font-size: 15px; line-height: 1.6; margin-bottom: 24px; }
 .partner a { margin-top: auto; font-size: 14px; font-weight: 700; text-underline-offset: 5px; }
-.partner a:hover, .partner a:focus-visible { color: #ad7500; text-decoration: underline; }
+.partner a:hover, .partner a:focus-visible { color: #087eaf; text-decoration: underline; }
 @media (max-width: 1100px) { .partners__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .partners__grid { grid-template-columns: 1fr; } }
 
@@ -902,7 +902,7 @@ button:disabled {
   background:
     linear-gradient(
       115deg,
-      rgba(242, 169, 0, 0.16),
+      rgba(73, 185, 237, 0.16),
       transparent 35%
     ),
     var(--surface-dark);
