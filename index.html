@@ -8,19 +8,82 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>Арматурный Цех</title>
+  <title>Арматура в Санкт-Петербурге — поставка, резка и гибка | Арматурный цех</title>
 
   <meta
     name="description"
-    content="Производство, резка, гибка и поставка арматуры для строительных объектов. Расчёт заявки и доставка."
+    content="ООО «Арматурный цех»: арматура, сетка, каркасы. Резка, гибка, доставка по Санкт-Петербургу. Склад: ул. Политехническая, 1Н. Тел. +7 (812) 740-79-19."
   >
 
-  <link rel="icon" href="favicon.ico?v=blue" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=blue">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=blue">
-  <link rel="stylesheet" href="style.css?v=refinement-1">
+  <link rel="canonical" href="https://armceh.ru/">
+  <meta name="theme-color" content="#13171b">
 
-  <script src="script.js" defer></script>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Арматурный цех">
+  <meta property="og:url" content="https://armceh.ru/">
+  <meta property="og:title" content="Арматура в Санкт-Петербурге — поставка, резка и гибка">
+  <meta property="og:description" content="Поставка и обработка арматуры: резка, гибка, каркасы, доставка. Склад в Санкт-Петербурге, ул. Политехническая, 1Н.">
+  <meta property="og:image" content="https://armceh.ru/images/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.ico?v=mark" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=mark">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=mark">
+  <link rel="stylesheet" href="style.css?v=cookies">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://armceh.ru/#business",
+    "name": "ООО «Арматурный цех»",
+    "alternateName": "Арматурный цех",
+    "url": "https://armceh.ru/",
+    "logo": "https://armceh.ru/logo.png",
+    "image": "https://armceh.ru/images/og.jpg",
+    "telephone": "+7-812-740-79-19",
+    "email": "info@armceh.ru",
+    "priceRange": "₽",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ул. Ключевая, д. 30, лит. А, оф. 409",
+      "addressLocality": "Санкт-Петербург",
+      "postalCode": "195221",
+      "addressCountry": "RU"
+    },
+    "department": {
+      "@type": "Place",
+      "name": "Склад",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Политехническая, д. 1Н",
+        "addressLocality": "Санкт-Петербург",
+        "addressCountry": "RU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 59.989823,
+        "longitude": 30.359724
+      },
+      "hasMap": "https://yandex.ru/maps/?pt=30.359724,59.989823"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Санкт-Петербург"
+    }
+  }
+  </script>
+
+  <script src="script.js?v=metrika" defer></script>
 </head>
 
 <body>
@@ -35,7 +98,13 @@
         aria-label="Арматурный цех — на главную"
       >
 
-        <span class="logo__mark">АЦ</span>
+        <img
+          class="logo__mark"
+          src="logo.png?v=3"
+          alt=""
+          width="256"
+          height="256"
+        >
 
         <span class="logo__text">
 
@@ -318,8 +387,8 @@
                 по вашим чертежам.
               </p>
 
-              <a class="card-link" href="downloads/armceh-price.xlsx" download="Прайс-Арматурный-цех.xlsx">
-                Скачать прайс · Excel
+              <a class="card-link" href="#request">
+                Получить расчёт
               </a>
 
             </div>
@@ -347,8 +416,8 @@
                 для бетонирования.
               </p>
 
-              <a class="card-link" href="downloads/armceh-price.xlsx" download="Прайс-Арматурный-цех.xlsx">
-                Скачать прайс · Excel
+              <a class="card-link" href="#request">
+                Получить расчёт
               </a>
 
             </div>
@@ -379,8 +448,8 @@
                 и закладные детали.
               </p>
 
-              <a class="card-link" href="downloads/armceh-price.xlsx" download="Прайс-Арматурный-цех.xlsx">
-                Скачать прайс · Excel
+              <a class="card-link" href="#request">
+                Получить расчёт
               </a>
 
             </div>
@@ -514,25 +583,13 @@
 
       <div class="container about">
 
-        <div
-          class="about__visual"
-          aria-hidden="true"
-        >
-
-          <div class="factory">
-
-            <div class="factory__beam"></div>
-
-            <div class="factory__hook"></div>
-
-            <div class="factory__floor"></div>
-
-            <div class="factory__bundle factory__bundle--one"></div>
-
-            <div class="factory__bundle factory__bundle--two"></div>
-
-          </div>
-
+        <div class="about__visual">
+          <img
+            src="images/about/company.jpg"
+            alt="Сотрудник Арматурного цеха на фоне вывески компании"
+            width="1200"
+            height="1201"
+          >
         </div>
 
 
@@ -617,25 +674,21 @@
         <div class="partners__grid">
           <article class="partner">
             <div class="partner__logo partner__logo--dark"><img src="images/partners/bmz.png" alt="БМЗ" loading="lazy"></div>
-            <h3>БМЗ</h3>
             <p>Белорусский металлургический завод. Выпускает арматуру, катанку, проволоку и бесшовные трубы.</p>
             <a href="https://belsteel.com/" target="_blank" rel="noopener noreferrer" aria-label="Официальный сайт — БМЗ">Официальный сайт <span aria-hidden="true">↗</span></a>
           </article>
           <article class="partner">
             <div class="partner__logo partner__logo--dark"><img class="partner__logo--invert" src="images/partners/severstal.svg" alt="Северсталь" loading="lazy"></div>
-            <h3>Северсталь</h3>
             <p>Производство стали и металлопродукции, решения для строительства и промышленности.</p>
             <a href="https://severstal.com/rus/" target="_blank" rel="noopener noreferrer" aria-label="Официальный сайт — Северсталь">Официальный сайт <span aria-hidden="true">↗</span></a>
           </article>
           <article class="partner">
             <div class="partner__logo partner__logo--dark"><span class="partner__wordmark">НЛМК</span></div>
-            <h3>НЛМК</h3>
             <p>Международная металлургическая группа: от добычи сырья и выплавки стали до готового проката.</p>
             <a href="https://nlmk.com/ru/about/" target="_blank" rel="noopener noreferrer" aria-label="Официальный сайт — НЛМК">Официальный сайт <span aria-hidden="true">↗</span></a>
           </article>
           <article class="partner">
             <div class="partner__logo partner__logo--dark"><img src="images/partners/mmk.webp" alt="ММК-метиз" loading="lazy"></div>
-            <h3>ММК-метиз</h3>
             <p>Магнитогорский метизно-калибровочный завод. Производит проволоку, канаты, сетки и крепёж.</p>
             <a href="https://mmk-metiz.ru/company/" target="_blank" rel="noopener noreferrer" aria-label="Официальный сайт — ММК-метиз">Официальный сайт <span aria-hidden="true">↗</span></a>
           </article>
@@ -768,9 +821,13 @@
           href="#top"
         >
 
-          <span class="logo__mark">
-            АЦ
-          </span>
+          <img
+            class="logo__mark"
+            src="logo.png?v=3"
+            alt=""
+            width="256"
+            height="256"
+          >
 
           <span class="logo__text">
 
@@ -854,7 +911,7 @@
         ООО «Арматурный цех». Все права защищены.
       </span>
 
-      <a href="#">
+      <a href="privacy.html">
         Политика конфиденциальности
       </a>
 
@@ -862,7 +919,33 @@
 
   </footer>
 
-
+  <div
+    class="cookie-banner"
+    id="cookie-banner"
+    hidden
+    role="dialog"
+    aria-modal="false"
+    aria-labelledby="cookie-banner-title"
+    aria-describedby="cookie-banner-text"
+  >
+    <div class="cookie-banner__card">
+      <div class="cookie-banner__copy">
+        <p class="cookie-banner__title" id="cookie-banner-title">Карта, аналитика и cookies</p>
+        <p id="cookie-banner-text">
+          На сайте работают виджет Яндекс.Карт и Яндекс.Метрика. Они могут сохранять cookies.
+          Нажимая «Согласен», вы подтверждаете, что ознакомились с
+          <a href="privacy.html">политикой конфиденциальности</a>.
+        </p>
+      </div>
+      <button
+        class="button button--primary cookie-banner__button"
+        type="button"
+        id="cookie-accept"
+      >
+        Согласен
+      </button>
+    </div>
+  </div>
 
 </body>
 </html>
