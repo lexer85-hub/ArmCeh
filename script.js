@@ -34,39 +34,42 @@ if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
 }
 
-const COOKIE_KEY = "armceh-map-consent";
+const COOKIE_KEY = "armceh-analytics-consent-v2";
 const cookieBanner = document.querySelector("#cookie-banner");
-const cookieAccept = document.querySelector("#cookie-accept");
+let analyticsAllowed = false;
+let analyticsStarted = false;
+try { analyticsAllowed = localStorage.getItem(COOKIE_KEY) === "accepted"; } catch {}
 
-function hideCookieBanner() {
+function saveConsent(allowed) {
+  analyticsAllowed = allowed;
+  try { localStorage.setItem(COOKIE_KEY, allowed ? "accepted" : "rejected"); } catch {}
   cookieBanner?.setAttribute("hidden", "");
-}
-
-try {
-  if (cookieBanner && localStorage.getItem(COOKIE_KEY) !== "1") {
-    cookieBanner.removeAttribute("hidden");
+  if (allowed) startAnalytics();
+  else if (analyticsStarted) {
+    window.ym?.(Number(YANDEX_METRIKA_ID), "destruct");
+    analyticsStarted = false;
   }
-} catch {
+}
+document.querySelector("#cookie-accept")?.addEventListener("click", () => saveConsent(true));
+document.querySelector("#cookie-reject")?.addEventListener("click", () => saveConsent(false));
+document.querySelectorAll(".cookie-settings").forEach(button => button.addEventListener("click", () => {
   cookieBanner?.removeAttribute("hidden");
-}
-
-cookieAccept?.addEventListener("click", () => {
-  try {
-    localStorage.setItem(COOKIE_KEY, "1");
-  } catch {
-    // ignore storage errors
-  }
-  hideCookieBanner();
-});
+  document.querySelector("#cookie-reject")?.focus();
+}));
+try {
+  if (!["accepted", "rejected"].includes(localStorage.getItem(COOKIE_KEY))) cookieBanner?.removeAttribute("hidden");
+} catch { cookieBanner?.removeAttribute("hidden"); }
 
 const YANDEX_METRIKA_ID = "112493161";
 
 function reachGoal(name) {
-  if (!YANDEX_METRIKA_ID || typeof ym !== "function") return;
+  if (!analyticsAllowed || !YANDEX_METRIKA_ID || typeof ym !== "function") return;
   ym(Number(YANDEX_METRIKA_ID), "reachGoal", name);
 }
 
-if (YANDEX_METRIKA_ID) {
+function startAnalytics() {
+  if (!analyticsAllowed || analyticsStarted) return;
+  analyticsStarted = true;
   (function (m, e, t, r, i, k, a) {
     m[i] =
       m[i] ||
@@ -93,6 +96,8 @@ if (YANDEX_METRIKA_ID) {
     webvisor: true,
   });
 }
+
+if (analyticsAllowed) startAnalytics();
 
 document.addEventListener("click", (event) => {
   const link = event.target.closest("a[href]");

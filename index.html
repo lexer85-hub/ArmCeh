@@ -30,10 +30,10 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="icon" href="favicon.ico?v=mark" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=mark">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=trans">
+  <link rel="icon" href="favicon.ico?v=trans" sizes="any">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=mark">
-  <link rel="stylesheet" href="style.css?v=cookies">
+  <link rel="stylesheet" href="style.css?v=audit-fixes">
 
   <script type="application/ld+json">
   {
@@ -84,7 +84,7 @@
   }
   </script>
 
-  <script src="script.js?v=metrika" defer></script>
+  <script src="script.js?v=audit-fixes" defer></script>
 </head>
 
 <body>
@@ -157,6 +157,7 @@
           Контакты
         </a>
 
+      <a class="nav__phone" href="tel:+78127407919">Позвонить: +7 (812) 740-79-19</a>
       </nav>
 
 
@@ -357,8 +358,8 @@
                 и классов прочности.
               </p>
 
-              <a class="card-link" href="downloads/armceh-price.xlsx" download="Прайс-Арматурный-цех.xlsx">
-                Скачать прайс · Excel
+              <a class="card-link" href="#request">
+                Получить расчёт
               </a>
 
             </div>
@@ -563,11 +564,11 @@
           </article>
           <article class="advantage">
             <img src="images/advantages/volume.svg?v=blue-2" alt="" width="400" height="290" loading="lazy">
-            <div class="advantage__body"><h3>Заказы любого объёма</h3><p>Работаем с небольшими партиями и крупными поставками.</p></div>
+            <div class="advantage__body"><h3>Малые и крупные партии</h3><p>Поставляем от 1 тонны — для небольших объектов и крупных строек.</p></div>
           </article>
           <article class="advantage">
             <img src="images/advantages/delivery.svg?v=blue-2" alt="" width="400" height="290" loading="lazy">
-            <div class="advantage__body"><h3>Доставка за один день</h3><p>Доставляем в течение одного дня со дня приёма заказа.</p></div>
+            <div class="advantage__body"><h3>Оперативная доставка</h3><p>Срок доставки согласуем при заказе с учётом наличия, объёма и адреса.</p></div>
           </article>
           <article class="advantage">
             <img src="images/advantages/direct.svg?v=blue-2" alt="" width="400" height="290" loading="lazy">
@@ -776,7 +777,7 @@
         <div class="requisites__heading">
           <p class="eyebrow">Информация о компании</p>
           <h2 id="requisites-title">Реквизиты организации</h2>
-          <a class="button button--secondary requisites__download" href="downloads/armceh-requisites.txt" download>Скачать реквизиты · TXT</a>
+          <a class="button button--secondary requisites__download" href="downloads/armceh-requisites.pdf" download>Скачать реквизиты · PDF</a>
         </div>
         <div class="requisites__grid">
           <article class="requisites__card">
@@ -918,6 +919,7 @@
 
     </div>
 
+  <div class="container"><button type="button" class="cookie-settings">Настройки cookies</button></div>
   </footer>
 
   <div
@@ -931,20 +933,13 @@
   >
     <div class="cookie-banner__card">
       <div class="cookie-banner__copy">
-        <p class="cookie-banner__title" id="cookie-banner-title">Карта, аналитика и cookies</p>
-        <p id="cookie-banner-text">
-          На сайте работают виджет Яндекс.Карт и Яндекс.Метрика. Они могут сохранять cookies.
-          Нажимая «Согласен», вы подтверждаете, что ознакомились с
-          <a href="privacy.html">политикой конфиденциальности</a>.
-        </p>
+        <p class="cookie-banner__title" id="cookie-banner-title">Аналитика сайта</p>
+        <p id="cookie-banner-text">Разрешить Яндекс.Метрику для улучшения сайта? <a href="privacy.html">Подробнее</a></p>
       </div>
-      <button
-        class="button button--primary cookie-banner__button"
-        type="button"
-        id="cookie-accept"
-      >
-        Согласен
-      </button>
+      <div class="cookie-banner__actions">
+        <button class="button button--secondary" type="button" id="cookie-reject">Без аналитики</button>
+        <button class="button button--primary" type="button" id="cookie-accept">Разрешить</button>
+      </div>
     </div>
   </div>
 

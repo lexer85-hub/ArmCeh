@@ -18,11 +18,11 @@
   <meta property="og:description" content="Политика конфиденциальности ООО «Арматурный цех»: обработка данных, cookies, Яндекс.Карты и Яндекс.Метрика.">
   <meta property="og:image" content="https://armceh.ru/images/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="favicon.ico?v=mark" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=mark">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=trans">
+  <link rel="icon" href="favicon.ico?v=trans" sizes="any">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=mark">
-  <link rel="stylesheet" href="style.css?v=cookies">
-  <script src="script.js?v=metrika" defer></script>
+  <link rel="stylesheet" href="style.css?v=audit-fixes">
+  <script src="script.js?v=audit-fixes" defer></script>
 </head>
 <body>
   <header class="header" id="top">
@@ -52,6 +52,7 @@
         <a href="index.html#services">Услуги</a>
         <a href="index.html#about">О компании</a>
         <a href="index.html#contacts">Контакты</a>
+      <a class="nav__phone" href="tel:+78127407919">Позвонить: +7 (812) 740-79-19</a>
       </nav>
 
       <div class="header__contacts">
@@ -99,7 +100,7 @@
           Эти файлы нужны, чтобы показать карту и маршрут до склада.
         </p>
         <p>
-          На сайте подключена Яндекс.Метрика (счётчик 112493161). Она собирает обезличенную
+          После вашего согласия на сайте подключается Яндекс.Метрика (счётчик 112493161). Она собирает обезличенную
           статистику посещений: страницы, источник перехода, устройство, клики по телефону,
           почте, MAX и скачивание прайса. Могут использоваться cookies, карта кликов и Вебвизор.
         </p>
@@ -108,7 +109,7 @@
           <a href="https://yandex.ru/legal/confidential/" target="_blank" rel="noopener noreferrer">политика конфиденциальности Яндекса</a>.
         </p>
         <p>
-          При первом посещении сайта мы просим подтвердить согласие с использованием cookies.
+          При первом посещении можно разрешить аналитику или продолжить без неё. До согласия Яндекс.Метрика не запускается. Виджет карты работает независимо от этого выбора.
           Выбор сохраняется в localStorage вашего браузера, чтобы баннер не показывался повторно.
         </p>
 
@@ -133,7 +134,7 @@
           Для этого напишите на <a href="mailto:info@armceh.ru">info@armceh.ru</a>.
         </p>
         <p>
-          Чтобы снова увидеть уведомление о cookies, очистите данные сайта в настройках браузера.
+          Изменить выбор можно кнопкой «Настройки cookies» внизу любой страницы. Отказ останавливает дальнейшую работу счётчика; ранее сохранённые cookies можно удалить в настройках браузера.
         </p>
       </div>
     </section>
@@ -172,6 +173,7 @@
       <span>© <span id="current-year"></span> ООО «Арматурный цех». Все права защищены.</span>
       <a href="privacy.html">Политика конфиденциальности</a>
     </div>
+  <div class="container"><button type="button" class="cookie-settings">Настройки cookies</button></div>
   </footer>
 
   <div
@@ -185,16 +187,13 @@
   >
     <div class="cookie-banner__card">
       <div class="cookie-banner__copy">
-        <p class="cookie-banner__title" id="cookie-banner-title">Карта, аналитика и cookies</p>
-        <p id="cookie-banner-text">
-          На сайте работают виджет Яндекс.Карт и Яндекс.Метрика. Они могут сохранять cookies.
-          Нажимая «Согласен», вы подтверждаете, что ознакомились с
-          <a href="privacy.html">политикой конфиденциальности</a>.
-        </p>
+        <p class="cookie-banner__title" id="cookie-banner-title">Аналитика сайта</p>
+        <p id="cookie-banner-text">Разрешить Яндекс.Метрику для улучшения сайта? <a href="privacy.html">Подробнее</a></p>
       </div>
-      <button class="button button--primary cookie-banner__button" type="button" id="cookie-accept">
-        Согласен
-      </button>
+      <div class="cookie-banner__actions">
+        <button class="button button--secondary" type="button" id="cookie-reject">Без аналитики</button>
+        <button class="button button--primary" type="button" id="cookie-accept">Разрешить</button>
+      </div>
     </div>
   </div>
 </body>
