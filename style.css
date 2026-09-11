@@ -63,7 +63,7 @@ img {
 }
 
 .section {
-  padding: 64px 0;
+  padding: 80px 0;
   scroll-margin-top: 90px;
 }
 
@@ -1121,7 +1121,7 @@ button:disabled {
 /* Подвал */
 
 .footer {
-  padding: 64px 0 24px;
+  padding: 80px 0 24px;
   color: #dbe0e4;
   background: #0b0e11;
 }
@@ -1198,7 +1198,7 @@ button:disabled {
 
 @media (max-width: 820px) {
   .section {
-    padding: 40px 0;
+    padding: 48px 0;
   }
 
   .section-heading {
