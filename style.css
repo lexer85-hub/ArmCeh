@@ -112,7 +112,7 @@ h3 {
 h1 {
   max-width: 860px;
   margin-bottom: 24px;
-  font-size: clamp(42px, 6vw, 78px);
+  font-size: clamp(40px, 5.4vw, 70px);
   letter-spacing: -0.04em;
 }
 
@@ -1388,3 +1388,23 @@ button:disabled {
 @media (max-width: 600px) { .advantages__grid { grid-template-columns: 1fr; gap: 20px; } }
 
 #about { background: #fff; }
+
+/* Визуальная иерархия контактов и реквизитов */
+.button__icon { width: 20px; height: 20px; flex: 0 0 20px; }
+.button:has(.button__icon) { gap: 10px; }
+.button--secondary { color: #176485; background: #fff; border-color: #9fcde1; }
+.button--secondary:hover { background: #edf8fd; border-color: #087eaf; }
+.button:focus-visible { outline: 3px solid #087eaf; outline-offset: 3px; }
+.partner__logo { justify-content: center; }
+.partner__logo img { max-width: 190px; max-height: 58px; object-position: center; }
+.partner__logo--invert { filter: brightness(0) invert(1); }
+.partner__wordmark { color: #fff; font-size: 36px; }
+.requisites__heading { display: grid; grid-template-columns: 1fr auto; align-items: center; column-gap: 24px; row-gap: 12px; }
+.requisites__heading .eyebrow { grid-column: 1 / -1; margin: 0; }
+.requisites__heading h2 { margin: 0; }
+.requisites__list > div { font-size: 15px; }
+.requisites__list dd { font-weight: 400; }
+@media (max-width: 900px) {
+  .requisites__heading { grid-template-columns: 1fr; }
+  .requisites__download { justify-self: start; }
+}
