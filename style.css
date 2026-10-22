@@ -334,10 +334,10 @@ h3 {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(310px, 0.55fr);
+  grid-template-columns: minmax(0, 1.25fr) minmax(360px, 0.75fr);
   align-items: stretch;
   align-content: center;
-  gap: 70px;
+  gap: 48px;
   min-height: 760px;
   padding-top: 72px;
   padding-bottom: 72px;
@@ -467,8 +467,15 @@ h3 {
 }
 
 .max-contact-block {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 14px;
+}
+
+.max-contact-block .button {
+  flex: 1 0 max-content;
+  width: auto;
+  white-space: nowrap;
 }
 
 button:disabled {
