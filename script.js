@@ -6,14 +6,17 @@ function closeMenu() {
   menuButton?.classList.remove("is-open");
   navigation?.classList.remove("is-open");
   menuButton?.setAttribute("aria-expanded", "false");
+  menuButton?.setAttribute("aria-label", "Открыть меню");
   document.body.classList.remove("menu-open");
 }
 
 menuButton?.addEventListener("click", () => {
+  if (!navigation) return;
   const isOpen = navigation.classList.toggle("is-open");
 
   menuButton.classList.toggle("is-open", isOpen);
   menuButton.setAttribute("aria-expanded", String(isOpen));
+  menuButton.setAttribute("aria-label", isOpen ? "Закрыть меню" : "Открыть меню");
   document.body.classList.toggle("menu-open", isOpen);
 });
 
@@ -24,8 +27,18 @@ navigation?.querySelectorAll("a").forEach((link) => {
 
 // Закрытие мобильного меню по Escape
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") closeMenu();
+  if (event.key === "Escape" && menuButton?.getAttribute("aria-expanded") === "true") {
+    closeMenu();
+    menuButton.focus();
+  }
 });
+
+// При переходе к настольной навигации возвращаем прокрутку страницы.
+window.matchMedia("(min-width: 821px)").addEventListener("change", (event) => {
+  if (event.matches) closeMenu();
+});
+
+document.querySelector(".header .logo")?.addEventListener("click", closeMenu);
 
 // Автоматическая установка текущего года в подвале
 const yearElement = document.querySelector("#current-year");
